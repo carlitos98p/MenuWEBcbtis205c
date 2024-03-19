@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #e02d2db6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+
+}
+.menu img {
+    height: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.toggle-btn span {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: transform 0.4s;
+}
+
+.toggle-btn.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.toggle-btn.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle-btn.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffc107;
+}
+
+.school-image {
+    width: 100%;
+    height: auto;
+}
